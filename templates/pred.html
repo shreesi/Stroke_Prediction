@@ -1,0 +1,44 @@
+<html lang="en" dir="ltr">
+
+  <body bgcolor='lightblue'>
+
+    <h1 align='center'>PREDICTION</h1>
+
+    <div align = 'center'>
+
+    {%if value == 1%}
+    <h1>Patient has Stroke</h1>
+    <h2>Causes</h2>
+    <h3>Stroke happens when a blood clot blocks the flow of blood and oxygen to the brain.The main 
+      cause of stroke is high blood pressure, which can weaken the arteries in the brain 
+      and make them more likely to split or rupture.
+      Things that increase the risk of high blood pressure include: </h3>
+      
+      <h3>1.Being overweight</h3>
+      <h3>2.Drinking excessive amounts of alcohol</h3>
+      <h3>3.Smoking</h3>
+      <h3>4.Lack of exercise</h3>
+      <h3>5.Stress</h3>
+<br>
+<br>
+<h2>Reducing the risk of a stroke</h2>
+  <h3>It's not possible to completely prevent strokes because some things that increase your risk of the condition cannot be changed.
+    But it's possible to significantly reduce your risk of having a stroke by making lifestyle changes to avoid problems such as atherosclerosis and high blood pressure.
+    You should also seek medical advice if you think you may have an irregular heartbeat.</h3>
+
+    {% elif value == 0 %}
+    <h1>Pateint does not have Stroke</h1>
+
+    {%else%}
+    <h1>Nothing</h1>
+
+    {% endif %}
+
+    <br><br>
+
+    <a href="/"> Home Page </a>
+
+  </div>
+
+  </body>
+</html>

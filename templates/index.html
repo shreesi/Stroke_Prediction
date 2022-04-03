@@ -1,0 +1,50 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stroke</title>
+  </head>
+
+  <body bgcolor='lightblue'>
+
+<h1 align='center'> STROKE PREDICTIONS</h1>
+<br>
+
+<div align='center'>
+
+<form method="POST",  action="{{url_for('home')}}">
+
+
+<br>
+Gender :          <input type="text" name="a" placeholder="0 or 1"> <br><br>
+Age :             <input type="text" name="b" placeholder="Age of the patient"> <br><br>
+Hypertension :    <input type="text" name="c" placeholder="0 or 1"> <br><br>
+Heart Disease :   <input type="text" name="d" placeholder="0 or 1"> <br><br>
+Ever Married :    <input type="text" name="e" placeholder="0 or 1"> <br><br>
+Work Type :       <input type="text" name="f" placeholder="0 or 1 or 2 or 3 or 4"> <br><br>
+Residence Type :  <input type="text" name="g" placeholder="0 or 1"> <br><br>
+Average Gulcose :  <input type="text" name="h" placeholder="Average glucose level in blood"> <br><br>
+BMI :             <input type="text" name="i" placeholder="BMI"> <br><br>
+Smoking Status :  <input type="text" name="j" placeholder="0 or 1 or 2 or 3"> <br><br>
+<input type="submit" value="predict">
+</form>
+
+</div>
+
+<h1>Information</h1> 
+
+<p>
+ <h4> 1)Gender: "Male = 1", "Female = 0"</h4>
+  <h4>2) Age: age of the patient</h4>
+  <h4>3) Hypertension: 0 if the patient doesn't have hypertension, 1 if the patient has hypertension</h4>
+  <h4>4) Heart_disease: 0 if the patient doesn't have any heart diseases, 1 if the patient has a heart disease</h4>
+  <h4>5) Ever_married: "No = 0" or "Yes =1"</h4> 
+  <h4>6) Work_type: "children = 4", "Govt_jov = 0", "Never_worked = 1", "Private = 2" or "Self-employed = 3"</h4>
+  <h4> 7) Residence_type: "Rural = 0" or "Urban = 1"</h4>
+  <h4>8) Avg_glucose_level: average glucose level in blood</h4>
+  <h4>9) BMI: body mass index</h4>
+  <h4>10) Smoking_status: "formerly smoked = 1", "never smoked = 2", "smokes = 3" or "Unknown = 0"</h4>
+
+</p>
+
+  </body>
+</html>
